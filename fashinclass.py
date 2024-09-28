@@ -28,7 +28,7 @@ class_name = ['t-shirt/top','trousers','puliver','drees','coat','sandal','shirt'
 
 # print(class_name[5])
 
-
+#creat Model#
 model = tf.keras.Sequential([
     keras.layers.Flatten(input_shape=[28,28]),
     keras.layers.Dense(300,activation='relu'),
