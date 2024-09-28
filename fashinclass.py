@@ -6,7 +6,7 @@ from tensorflow import keras
 df = keras.datasets.fashion_mnist.load_data()
 
 (X_train_f,y_train_f),(X_test,ytest) = df
-
+#Show the image#
 # fig , axes = plt.subplots(nrows=3,ncols=3,figsize=(5,6))
 # a = 0
 #
@@ -39,8 +39,6 @@ model = tf.keras.Sequential([
 
 ])
 # print(model.summary())
-# hi1 = model.layers[1]
-# w = hi1.get_weights()
 
 model.compile(loss='sparse_categorical_crossentropy',optimizer='sgd', metrics=['accuracy'])
 
